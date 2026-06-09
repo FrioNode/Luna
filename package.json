@@ -26,11 +26,11 @@
       "baileys",
       "protobufjs",
       "sharp"
-    ]  
+    ]
   },
   "author": "FrioNode",
   "license": "ISC",
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.28.2",
   "dependencies": {
     "@distube/ytdl-core": "^4.16.10",
     "axios": "^1.9.0",
