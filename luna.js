@@ -28,7 +28,8 @@ const { emojis, doReact } = require('./colors/react');
 const { mess, initMess } = require('./colors/mess'); const dotenv = require('dotenv');
 const { _autoStartGame } = require('./bloom/base/games');
 dotenv.config(); initMess();
-const session = process.env.SESSION
+const session = process.env.SESSION;
+const xserver = process.env.XSERVER || "https://lunaconnect-production.up.railway.app/session";
 const store = require('./colors/luna_store');
 connectDB('Luna module');
 async function preloadConfig() {
@@ -77,7 +78,7 @@ async function downloadSessionData() {
         console.warn("⚠️ No valid SESSION env found (expected format: LUNA~XXXXXX)");
         return false;
     }
-    const url = `https://lunaconnect.up.railway.app/session/${session}`;
+    const url = `${xserver}/${session}`;
 
     try {
         const response = await axios.get(url);

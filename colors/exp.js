@@ -11,7 +11,7 @@ let redis;
 
 // Initialize Redis inside an async function
 async function initRedis() {
-    const redisurl = await get('REDIS');
+    const redisurl = process.env.REDIS || await get('REDIS');
     redis = new RedisClient(redisurl);
 }
 

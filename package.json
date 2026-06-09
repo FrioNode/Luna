@@ -56,7 +56,7 @@
     "qrcode": "^1.5.4",
     "qrcode-terminal": "^0.12.0",
     "redis": "^5.10.0",
-    "sharp": "^0.34.5",
+    "sharp": "~0.29.3",
     "stream": "^0.0.3",
     "uuid": "^11.1.0",
     "wa-sticker-formatter": "^4.4.4",
