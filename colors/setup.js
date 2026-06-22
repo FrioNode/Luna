@@ -24,6 +24,7 @@ async function initDefaults() {
     LANG: process.env.LANG || 'EN',
     REACT: process.env.REACT || 'false',
     EMOJI: process.env.EMOJI || '🌘',
+    POKEMON: process.env.POKEMON || 'false',
     REBOOT: process.env.REBOOT === 'true' ? 'true' : 'false',
     IS_DOCKER: process.env.IS_DOCKER || 'false',
     TIMEZONE: process.env.TIMEZONE || 'Africa/Nairobi',
