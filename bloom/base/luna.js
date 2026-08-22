@@ -1,6 +1,6 @@
 const { get } =require('../../colors/setup');
 const { GroqAI } = require('../../colors/groq');
-const models = ['llama-3.1-8b-instant', 'llama-3.3-70b-versatile','qwen/qwen3-32b']; 
+const models = ['llama-3.1-8b-instant', 'groq/compound-mini','qwen/qwen3-32b']; 
 
 
 module.exports = {
